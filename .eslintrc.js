@@ -11,8 +11,17 @@ module.exports = {
     '@nuxtjs',
     'plugin:nuxt/recommended'
   ],
-  plugins: [
-  ],
+  plugins: [],
   // add your custom rules here
-  rules: {}
+  rules: {
+    indent: 'off',
+    'vue/script-indent': ['warn', 4, {
+      baseIndent: 1,
+      switchCase: 1,
+      ignores: []
+    }],
+    'vue/html-indent': ['warn', 4],
+    'vue/max-attributes-per-line': ['off'],
+    semi: ['off']
+  }
 }
